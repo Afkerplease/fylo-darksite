@@ -16,7 +16,7 @@ function Form() {
     setText(event.target.value);
   };
   return (
-    <div className=" bg-DarkBlue shadow-lg w-[85%] pt-[4rem] shadow-black pb-10 rounded-[10px]   left-8 -top-[20%]    absolute">
+    <div className=" bg-DarkBlue lg:-top-[15%] lg:w-[50%] lg:left-[25%] shadow-lg w-[85%] pt-[4rem] shadow-black pb-10 rounded-[10px]   left-8 -top-[20%]    absolute">
       <form
         action=""
         onSubmit={submitHandler}
@@ -25,14 +25,14 @@ function Form() {
         <h2 className=" font-Raleway font-[700] text-white text-2xl ">
           Get early access today
         </h2>
-        <p className=" font-Open text-white text-center w-[85%] ">
+        <p className=" font-Open text-gray-300 text-center w-[85%] ">
           It only takes a minute to sign up and our free starter tier is
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </p>
-        <div className=" relative flex flex-col items-center w-[100%] gap-10 mt-4 ">
+        <div className=" lg:px-10 relative flex flex-col lg:flex-row items-center w-[100%] gap-10 mt-4 ">
           <input
-            className=" w-[80%] px-3 text-gray-400     py-3 rounded-full font-Raleway "
+            className=" w-[80%]  px-3 text-gray-400     py-3 rounded-full font-Raleway "
             type="text"
             onChange={changeHandler}
             value={text}
@@ -46,7 +46,7 @@ function Form() {
               please enter a valid email address{" "}
             </p>
           )}
-          <button className=" font-Raleway font-[700] text-White bg-gradient-to-r from-Cyan to-Blue w-[80%] py-4 rounded-full  ">
+          <button className=" lg:w-[30%]  font-Raleway font-[700] text-White  hover:contrast-125   bg-gradient-to-r  from-Cyan to-Blue w-[80%] py-4 rounded-full  ">
             Get Started For Free
           </button>
         </div>
