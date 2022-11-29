@@ -11,6 +11,15 @@ import satish from "./images/profile-1.jpg";
 import bruce from "./images/profile-2.jpg";
 import Eva from "./images/profile-3.jpg";
 import quote from "./images/bg-quotes.png";
+import Form from "./Components/Form";
+import logo from "./images/logo.svg";
+import location from "./images/icon-location.svg";
+import phone from "./images/icon-phone.svg";
+import email from "./images/icon-email.svg";
+
+import { BsTwitter } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
 
 function App() {
   return (
@@ -90,8 +99,8 @@ function App() {
       </section>
       {/* end of section features */}
       {/* section works */}
-      <section className=" font-Open mt-[9rem] ">
-        <div>
+      <section className="    font-Open mt-[9rem] ">
+        <div className=" ">
           <img src={productivity} className="w-[80%] mx-auto " alt="" />
         </div>
         <div className=" gap-4 mt-10 flex flex-col items-start px-8">
@@ -116,10 +125,10 @@ function App() {
       </section>
       {/*  end of section works */}
       {/* section testimonials */}
-      <section className=" relative font-Open mt-[9rem] px-10 flex flex-col gap-10 ">
+      <section className=" pb-[10rem] mb-[10rem] relative font-Open mt-[9rem] px-10 flex flex-col gap-10 ">
         <img src={quote} className=" w-[8%] bottom-[99%] absolute" alt="" />
-        <img src={quote} className=" w-[8%] bottom-[63%] absolute" alt="" />
-        <img src={quote} className=" w-[8%] bottom-[28%] absolute" alt="" />
+        <img src={quote} className=" w-[8%] bottom-[69%] absolute" alt="" />
+        <img src={quote} className=" w-[8%] bottom-[40%] absolute" alt="" />
         <div className=" bg-DarkBlue4 px-5 py-8  shadow-2xl rounded-[10px] ">
           <p className=" text-White">
             Fylo has improved our team productivity by an order of magnitude.
@@ -164,6 +173,74 @@ function App() {
         </div>
       </section>
       {/* end of section testimonials */}
+      <footer className=" relative   pt-[20rem] w-[100%] bg-DarkBlue3 py-8 px-6 ">
+        <Form />
+        <div>
+          <img src={logo} alt="" />
+          <div className=" flex items-start justify-start gap-4  mt-8 ">
+            <img src={location} className=" w-[5%]" alt="" />
+            <p className="w-[60%] self-start text-white ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+        </div>
+        <ul className=" flex flex-col gap-4 mt-4  items-start">
+          <li className=" flex items-center gap-4">
+            {" "}
+            <img src={phone} alt="" />{" "}
+            <a href="#" className=" text-white">
+              {" "}
+              +1-543-123-4567
+            </a>{" "}
+          </li>
+          <li className=" items-center flex gap-4">
+            {" "}
+            <img src={email} alt="" />{" "}
+            <a className=" text-white" href="">
+              {" "}
+              example@fylo.com
+            </a>{" "}
+          </li>
+        </ul>
+
+        <ul className=" flex flex-col items-start mt-20 text-white gap-2">
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Jobs</a>
+          </li>
+          <li>
+            <a href="#">Press</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+        <ul className=" flex flex-col items-start mt-10 text-white gap-2">
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Terms</a>
+          </li>
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+        </ul>
+        <div className=" mt-10 flex gap-4 items-center justify-center  w-[100%] ">
+          <button className=" border-[1px] p-2 rounded-full">
+            <FaFacebookF className=" text-white h-5 w-5" />
+          </button>
+          <button className=" border-[1px] p-2 rounded-full">
+            <BsTwitter className=" text-white h-5 w-5" />
+          </button>
+          <button className=" border-[1px] p-2 rounded-full">
+            <BsInstagram className=" text-white h-5 w-5" />
+          </button>
+        </div>
+      </footer>
     </main>
   );
 }
