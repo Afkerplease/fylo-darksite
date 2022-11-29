@@ -7,6 +7,10 @@ import collab from "./images/icon-collaboration.svg";
 import store from "./images/icon-any-file.svg";
 import productivity from "./images/illustration-stay-productive.png";
 import arrow from "./images/icon-arrow.svg";
+import satish from "./images/profile-1.jpg";
+import bruce from "./images/profile-2.jpg";
+import Eva from "./images/profile-3.jpg";
+import quote from "./images/bg-quotes.png";
 
 function App() {
   return (
@@ -110,7 +114,56 @@ function App() {
           </div>
         </div>
       </section>
-      {/* section works */}
+      {/*  end of section works */}
+      {/* section testimonials */}
+      <section className=" relative font-Open mt-[9rem] px-10 flex flex-col gap-10 ">
+        <img src={quote} className=" w-[8%] bottom-[99%] absolute" alt="" />
+        <img src={quote} className=" w-[8%] bottom-[63%] absolute" alt="" />
+        <img src={quote} className=" w-[8%] bottom-[28%] absolute" alt="" />
+        <div className=" bg-DarkBlue4 px-5 py-8  shadow-2xl rounded-[10px] ">
+          <p className=" text-White">
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div className=" flex gap-2 mt-8 items-center ">
+            <img src={satish} className="rounded-full w-[50px] " alt="" />
+            <div>
+              <h3 className=" text-White font-[700] ">Satish Patel</h3>
+              <p className=" text-[12px] text-white ">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+        <div className=" bg-DarkBlue4 px-5 py-8  shadow-2xl  rounded-[10px]">
+          <p className=" text-White">
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div className=" flex gap-2 mt-8 items-center ">
+            <img src={bruce} className="rounded-full w-[50px] " alt="" />
+            <div>
+              <h3 className=" text-White font-[700] ">Bruce McKenzie</h3>
+              <p className=" text-[12px] text-white ">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+        <div className=" bg-DarkBlue4 px-5 py-8  shadow-2xl rounded-[10px] ">
+          <p className=" text-White">
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div className=" flex gap-2 mt-8 items-center ">
+            <img src={Eva} className="rounded-full w-[50px] " alt="" />
+            <div>
+              <h3 className=" text-White font-[700] ">Iva Boyd</h3>
+              <p className=" text-[12px] text-white ">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* end of section testimonials */}
     </main>
   );
 }
